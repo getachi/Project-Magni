@@ -9,5 +9,7 @@
     <string name="taxi">Taxi Company</string>
     <string name="supermarket">Supermarket</string>
     <string name="petrol_station">Petrol Station</string>
+    <string name="title_activity_map_view">MapViewActivity</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

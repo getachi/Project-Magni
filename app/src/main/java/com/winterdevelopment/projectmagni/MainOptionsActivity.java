@@ -1,9 +1,12 @@
 package com.winterdevelopment.projectmagni;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ToggleButton;
 
 
 public class MainOptionsActivity extends ActionBarActivity {
@@ -35,5 +38,15 @@ public class MainOptionsActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public final static String FOOD_CHECK = "com.winterdevelopment.projectmagni.FOODCHECK";
+
+    public void onSearchPress(View view) {
+        Intent openMapView = new Intent(this, MapViewActivity.class);
+        ToggleButton foodToggle = (ToggleButton) findViewById(R.id.food_toggleButton);
+        Boolean foodCheck = foodToggle.isChecked();
+        openMapView.putExtra(FOOD_CHECK, foodCheck);
+        startActivity(openMapView);
     }
 }

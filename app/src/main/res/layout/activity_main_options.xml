@@ -31,13 +31,14 @@
         android:text="@string/search"
         android:id="@+id/search_button"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="onSearchPress" />
 
     <ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/taxi"
-        android:id="@+id/toggleButton"
+        android:id="@+id/taxi_toggleButton"
         android:layout_marginTop="40dp"
         android:textOff="@string/taxi"
         android:textOn="@string/taxi"
@@ -48,22 +49,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/petrol_station"
-        android:id="@+id/toggleButton2"
+        android:id="@+id/petrol_toggleButton"
         android:layout_marginTop="40dp"
         android:textOff="@string/petrol_station"
         android:textOn="@string/petrol_station"
-        android:layout_below="@+id/toggleButton"
+        android:layout_below="@+id/taxi_toggleButton"
         android:layout_centerHorizontal="true" />
 
     <ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/supermarket"
-        android:id="@+id/toggleButton3"
+        android:id="@+id/supermarket_toggleButton"
         android:layout_marginTop="40dp"
         android:textOff="@string/supermarket"
         android:textOn="@string/supermarket"
-        android:layout_below="@+id/toggleButton2"
+        android:layout_below="@+id/petrol_toggleButton"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
